@@ -1,0 +1,213 @@
+.admin-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 20px;
+    background: #f4f1ec;
+    color: #222;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-page *,
+.admin-page *::before,
+.admin-page *::after {
+    box-sizing: border-box;
+}
+
+.admin-page main {
+    width: 100%;
+    max-width: 440px;
+}
+
+.admin-page .brand {
+    margin: 0 0 24px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.admin-page .accent {
+    color: #e8590c;
+}
+
+.admin-page .panel {
+    padding: 30px;
+    border-top: 4px solid #e8590c;
+    background: #fff;
+}
+
+.admin-page h1 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.admin-page .intro {
+    margin-bottom: 24px;
+    color: #666;
+}
+
+.admin-page .field {
+    margin-bottom: 18px;
+}
+
+.admin-page label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admin-page .field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.admin-page .remember {
+    margin-bottom: 20px;
+}
+
+.admin-page .remember input {
+    margin-right: 6px;
+}
+
+.admin-page .remember label {
+    display: inline;
+    font-weight: normal;
+}
+
+.admin-page .submit {
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    background: #e8590c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.admin-page .admin-link {
+    display: block;
+    margin-top: 16px;
+    color: #c94a08;
+    text-align: center;
+}
+
+.admin-page .note {
+    color: #666;
+    font-size: 13px;
+}
+
+.admin-page footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+}
+
+.admin-page .submit:hover,
+.admin-page .record-card button:hover {
+    background: #c94a08;
+}
+
+.admin-page.records-page {
+    display: block;
+}
+
+.admin-page.records-page main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.records-page .brand {
+    margin-top: 0;
+}
+
+.records-page main > a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #c94a08;
+}
+
+.record-grid {
+    display: block;
+}
+
+.record-card {
+    margin-bottom: 16px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.record-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.record-card label {
+    margin-top: 4px;
+}
+
+.record-card input,
+.record-card select {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    font: inherit;
+}
+
+.admin-page .field input:focus,
+.record-card input:focus,
+.record-card select:focus {
+    outline: 2px solid #e8590c;
+    outline-offset: 1px;
+    border-color: #e8590c;
+}
+
+.record-card button {
+    padding: 10px 16px;
+    border: 0;
+    background: #e8590c;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.record-list {
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+.record-list table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.record-list th,
+.record-list td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.record-list th {
+    background: #f4f1ec;
+}
+
+.records-message {
+    min-height: 20px;
+    color: #555;
+}
+
+@media (max-width: 480px) {
+    .admin-page .panel {
+        padding: 20px;
+    }
+}
